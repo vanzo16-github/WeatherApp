@@ -62,7 +62,7 @@ export default {
             this.loading = true;
             this.error = false;
             try {
-                fetch(`http://api.weatherapi.com/v1/current.json?key=2698e8ab1a2c41cbb2b91155240105&q=${this.searchQuery}`)
+                fetch(`https://api.weatherapi.com/v1/current.json?key=2698e8ab1a2c41cbb2b91155240105&q=${this.searchQuery}`)
                 .then(response => response.json())
                 .then(data => {
                     this.loading = false;
